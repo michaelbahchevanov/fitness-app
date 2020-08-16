@@ -1,0 +1,26 @@
+{
+  "name": "fitness-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "migrate": "knex migrate:latest",
+    "rollback": "knex migrate:rollback"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelbahchevanov/fitness-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelbahchevanov/fitness-app/issues"
+  },
+  "homepage": "https://github.com/michaelbahchevanov/fitness-app#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "knex": "^0.21.4",
+    "mysql": "^2.18.1"
+  }
+}
