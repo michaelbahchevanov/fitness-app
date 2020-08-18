@@ -1,5 +1,6 @@
 const knex = require('knex');
-const tableNames = require('../src/constants/tableNames');
+const tableNames = require('../../src/constants/tableNames');
+const orderedTableNames = require('../../src/constants/orderedTableNames');
 
 const addDefaultColumns = (table) => {
   table.timestamps(false, true);
@@ -71,14 +72,6 @@ exports.up = async (knex) => {
 
 exports.down = async (knex) => {
   await Promise.all(
-    [
-      tableNames.fitness_program_info,
-      tableNames.fitness_program_video,
-      tableNames.fitness_program_image,
-      tableNames.fitness_program,
-      tableNames.user,
-      tableNames.user_type,
-      tableNames.fitness_program_type,
-    ].map((tableName) => knex.schema.dropTable(tableName))
+    [...orderedTableNames].map((tableName) => knex.schema.dropTable(tableName))
   );
 };

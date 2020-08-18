@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "migrate": "knex migrate:latest",
-    "rollback": "knex migrate:rollback"
+    "rollback": "knex migrate:rollback",
+    "seed": "knex seed:run",
+    "test": "knex migrate:latest && knex seed:run"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,7 @@
   },
   "homepage": "https://github.com/michaelbahchevanov/fitness-app#readme",
   "dependencies": {
+    "bcrypt": "^5.0.0",
     "dotenv": "^8.2.0",
     "knex": "^0.21.4",
     "mysql": "^2.18.1"

@@ -11,3 +11,5 @@ An app to be used by a personal coach to aid in providing fitness programes to c
 # Powered by XAMPP
 
 # Migrate database: `npm run migrate`
+
+# Seed and migrate database: `npm run test`
