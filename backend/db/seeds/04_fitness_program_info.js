@@ -11,6 +11,7 @@ exports.seed = async (knex) => {
 
   const programInfo = {
     fitness_program_id: 1,
+    user_id: 1,
     purchase_price: 66.99,
     purchased_at: Date.now(),
   };
