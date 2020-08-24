@@ -10,6 +10,9 @@ import {
   Profile,
   About,
   Login,
+  Description,
+  Purchase,
+  Checkout,
 } from './pages';
 
 const App = () => {
@@ -32,6 +35,9 @@ const App = () => {
             <Route path="/privacy" exact component={PrivacyPolicy} />
             <Route path="/cookie" exact component={CookiePolicy} />
             <Route path="/contact" exact component={Contact} />
+            <Route path="/description" exact component={Description} />
+            <Route path="/purchase" exact component={Purchase} />
+            <Route path="/checkout" exact component={Checkout} />
             <Route path="/" render={() => <div>Error 404</div>} />
           </Switch>
         </Router>
