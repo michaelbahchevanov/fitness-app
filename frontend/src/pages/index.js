@@ -1,0 +1,11 @@
+export { default as About } from './About/About';
+export { default as Checkout } from './Checkout/Checkout';
+export { default as Contact } from './Contact/Contact';
+export { default as CookiePolicy } from './CookiePolicy/CookiePolicy';
+export { default as Description } from './Description/Description';
+export { default as Home } from './Home/Home';
+export { default as Login } from './Login/Login';
+export { default as PrivacyPolicy } from './PrivacyPolicy/PrivacyPolicy';
+export { default as Profile } from './Profile/Profile';
+export { default as Purchase } from './Purchase/Purchase';
+export { default as PurchaseDescription } from './PurchaseDescription/PurchaseDescription';
