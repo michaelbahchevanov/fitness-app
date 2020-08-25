@@ -8,10 +8,10 @@ const Footer = () => {
     <Navbar bg="light" expand="lg" fixed="bottom">
       <Nav className="mx-auto">
         <Nav.Link>
-          <Link to="/privacy">Privacy Policy</Link>
+          <Link to="/privacy-policy">Privacy Policy</Link>
         </Nav.Link>
         <Nav.Link>
-          <Link to="/cookie">Cookie Policy</Link>
+          <Link to="/cookie-policy">Cookie Policy</Link>
         </Nav.Link>
         <Nav.Link>
           <Link to="/contact">Contact us</Link>

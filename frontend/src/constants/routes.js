@@ -1,0 +1,10 @@
+export const LANDING = '/';
+export const ACCOUNT = '/profile';
+export const ABOUT = '/about';
+export const LOGIN = '/login';
+export const PRIVACY_POLICY = '/privacy-policy';
+export const COOKIE_POLICY = '/cookie-policy';
+export const CONTACT = '/contact';
+export const FITNESS_PROGRAM_DESCRIPTION = '/program-description';
+export const PURCHASE = '/purchase';
+export const REGISTER = '/register';

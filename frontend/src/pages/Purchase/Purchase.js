@@ -4,7 +4,7 @@ const Purchase = ({ history }) => {
   return (
     <div>
       <h1>This is the purchase a program page</h1>
-      <button onClick={() => history.push('/checkout')}>Register first</button>
+      <button onClick={() => history.push('/register')}>Register first</button>
     </div>
   );
 };
