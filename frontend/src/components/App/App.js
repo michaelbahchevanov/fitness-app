@@ -1,9 +1,10 @@
 import React from 'react';
-import { Navigation, Footer } from './components';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Container, Row } from 'react-bootstrap';
-import * as Pages from './pages';
-import * as Routes from './constants/routes';
+import { Navigation, Footer } from '..';
+import * as Components from '..';
+import * as Pages from '../../pages';
+import * as Routes from '../../constants/routes';
 
 const App = () => {
   return (
@@ -21,7 +22,7 @@ const App = () => {
             <Route exact path={Routes.LANDING} component={Pages.Landing} />
             <Route exact path={Routes.ACCOUNT} component={Pages.Account} />
             <Route exact path={Routes.ABOUT} component={Pages.About} />
-            <Route exact path={Routes.LOGIN} component={Pages.Login} />
+            <Route exact path={Routes.LOGIN} component={Components.Login} />
             <Route
               exact
               path={Routes.PRIVACY_POLICY}
@@ -39,7 +40,21 @@ const App = () => {
               component={Pages.Description}
             />
             <Route exact path={Routes.PURCHASE} component={Pages.Purchase} />
-            <Route exact path={Routes.REGISTER} component={Pages.Register} />
+            <Route
+              exact
+              path={Routes.REGISTER}
+              component={Components.Register}
+            />
+            <Route
+              exact
+              path={Routes.PASSWORD_RESET}
+              component={Components.ResetPassword}
+            />
+            <Route
+              exact
+              path={Routes.PASSWORD_CHANGE}
+              component={Components.ChangePassword}
+            />
             <Route path="/" component={Pages.NotFound} />
           </Switch>
         </Router>

@@ -1,10 +1,8 @@
 export { default as About } from './About/About';
-export { default as Register } from './Register/Register';
 export { default as Contact } from './Contact/Contact';
 export { default as CookiePolicy } from './CookiePolicy/CookiePolicy';
 export { default as Description } from './Description/Description';
 export { default as Landing } from './Landing/Landing';
-export { default as Login } from './Login/Login';
 export { default as PrivacyPolicy } from './PrivacyPolicy/PrivacyPolicy';
 export { default as Account } from './Account/Account';
 export { default as Purchase } from './Purchase/Purchase';

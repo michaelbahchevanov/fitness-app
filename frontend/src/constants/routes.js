@@ -8,3 +8,5 @@ export const CONTACT = '/contact';
 export const FITNESS_PROGRAM_DESCRIPTION = '/program-description';
 export const PURCHASE = '/purchase';
 export const REGISTER = '/register';
+export const PASSWORD_RESET = '/password-reset';
+export const PASSWORD_CHANGE = '/password-change';

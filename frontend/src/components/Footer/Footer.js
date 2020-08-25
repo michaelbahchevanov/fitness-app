@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import * as Routes from '../../constants/routes';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Footer = () => {
@@ -8,13 +9,13 @@ const Footer = () => {
     <Navbar bg="light" expand="lg" fixed="bottom">
       <Nav className="mx-auto">
         <Nav.Link>
-          <Link to="/privacy-policy">Privacy Policy</Link>
+          <Link to={Routes.PRIVACY_POLICY}>Privacy Policy</Link>
         </Nav.Link>
         <Nav.Link>
-          <Link to="/cookie-policy">Cookie Policy</Link>
+          <Link to={Routes.COOKIE_POLICY}>Cookie Policy</Link>
         </Nav.Link>
         <Nav.Link>
-          <Link to="/contact">Contact us</Link>
+          <Link to={Routes.CONTACT}>Contact us</Link>
         </Nav.Link>
       </Nav>
     </Navbar>

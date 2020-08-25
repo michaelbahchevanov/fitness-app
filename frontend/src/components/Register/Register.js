@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useForm } from 'react-hook-form';
 
-const Checkout = () => {
+const Register = () => {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data, e) => console.log(data, e);
   const onError = (error, e) => console.log(error, e);
@@ -36,4 +36,4 @@ const Checkout = () => {
   );
 };
 
-export default Checkout;
+export default Register;
