@@ -8,18 +8,18 @@ const Navigation = () => {
   return (
     <Navbar bg="dark" variant="dark" className="w-100">
       <Nav className="d-flex justify-content-center w-100">
-        <Nav.Link>
+        <Nav.Item>
           <Link to={Routes.LANDING}>Home</Link>
-        </Nav.Link>
-        <Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
           <Link to={Routes.ACCOUNT}>Profile</Link>
-        </Nav.Link>
-        <Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
           <Link to={Routes.ABOUT}>About</Link>
-        </Nav.Link>
-        <Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
           <Link to={Routes.LOGIN}>Login</Link>
-        </Nav.Link>
+        </Nav.Item>
       </Nav>
     </Navbar>
   );

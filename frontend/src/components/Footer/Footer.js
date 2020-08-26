@@ -8,15 +8,15 @@ const Footer = () => {
   return (
     <Navbar bg="light" expand="lg" fixed="bottom">
       <Nav className="mx-auto">
-        <Nav.Link>
+        <Nav.Item>
           <Link to={Routes.PRIVACY_POLICY}>Privacy Policy</Link>
-        </Nav.Link>
-        <Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
           <Link to={Routes.COOKIE_POLICY}>Cookie Policy</Link>
-        </Nav.Link>
-        <Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
           <Link to={Routes.CONTACT}>Contact us</Link>
-        </Nav.Link>
+        </Nav.Item>
       </Nav>
     </Navbar>
   );
